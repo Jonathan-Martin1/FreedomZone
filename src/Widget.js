@@ -4,8 +4,13 @@ import './Widget.css'
 function Widget() {
   return (
     <div className='widget'>
-      <h1>Please Donate to support the platform</h1>
-      <form action='https://www.paypal.com/donate' method='post' target='_top'>
+      <h1>Please Donate</h1>
+      <form
+        style={{ display: 'flex', justifyContent: 'center' }}
+        action='https://www.paypal.com/donate'
+        method='post'
+        target='_top'
+      >
         <input type='hidden' name='business' value='R93VHWZWXN2Z4' />
         <input type='hidden' name='no_recurring' value='0' />
         <input
